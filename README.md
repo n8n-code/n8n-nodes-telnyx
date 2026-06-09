@@ -55,83 +55,83 @@ That's it. No configuration files. No code. It just works.
 
 | Resource | Operations |
 |----------|------------|
-| Addresses | GET List all addresses, POST Creates an address, POST Validate an address, DELETE Deletes an address, GET Retrieve an address |
-| Authentication Providers | GET List all SSO authentication providers, POST Creates an authentication provider, DELETE Deletes an authentication provider, GET Retrieve an authentication provider, PATCH Update a authentication provider |
-| Billing | GET Retrieve user balance details |
-| Billing Groups | GET List all billing groups, POST Create a billing group, DELETE Delete a billing group, GET Retrieve a billing group, PATCH Update a billing group |
-| Bulk Credentials | DELETE Delete several credentials, PATCH Update several credentials, POST Creates several credentials, POST Perform activate or deactivate action on all credentials filtered by the provided tag. |
-| Call Commands | POST Dial, POST Answer call, POST Bridge calls, POST Enqueue call, POST Forking start, POST Forking stop, POST Gather stop, POST Gather using audio, POST Gather using speak, POST Hangup call, POST Remove call from a queue, POST Play audio URL, POST Stop audio playback, POST Record pause, POST Record resume, POST Recording start, POST Recording stop, POST SIP Refer a call, POST Reject a call, POST Send DTMF, POST Speak text, POST Transcription start, POST Transcription stop, POST Transfer call |
-| Call Control Applications | GET List call control applications, POST Create a call control application, DELETE Delete a call control application, GET Retrieve a call control application, PATCH Update a call control application |
-| Call Information | GET Retrieve a call status |
-| Conference Commands | GET List conferences, POST Create conference, GET List conference participants, GET Retrieve a conference, POST Dial a new participant into a conference, POST Hold conference participants, POST Join a conference, POST Leave a conference, POST Mute conference participants, POST Play audio to conference participants, POST Conference recording start, POST Conference recording stop, POST Speak text to conference participants, POST Stop audio being played on the conference, POST Unhold conference participants, POST Unmute conference participants, POST Update conference participant |
-| Connections | GET List connections, GET Retrieve a connection |
-| Credential Connections | GET List credential connections, POST Create a credential connection, DELETE Delete a credential connection, GET Retrieve a credential connection, PATCH Update a credential connection |
-| Debugging | GET List call events |
-| Detail Records | GET Search detail records |
-| Documents | GET List all document links, GET List all documents, POST Upload a document, DELETE Delete a document, GET Retrieve a document, PATCH Update a document, GET Download a document |
-| FQDN Connections | GET List FQDN connections, POST Create an FQDN connection, DELETE Delete an FQDN connection, GET Retrieve an FQDN connection, PATCH Update an FQDN connection |
-| FQD Ns | GET List FQDNs, POST Create an FQDN, DELETE Delete an FQDN, GET Retrieve an FQDN, PATCH Update an FQDN |
-| IP Connections | GET List Ip connections, POST Create an Ip connection, DELETE Delete an Ip connection, GET Retrieve an Ip connection, PATCH Update an Ip connection |
-| I Ps | GET List Ips, POST Create an Ip, DELETE Delete an Ip, GET Retrieve an Ip, PATCH Update an Ip |
-| Inventory Level | GET Create an inventory coverage request |
-| MDR Search Beta | GET Fetch messaging detail records., GET Fetch message body by id. |
-| Managed Accounts | GET Lists accounts managed by the current user., POST Create a new managed account., GET Retrieve a managed account, POST Disables a managed account, POST Enables a managed account |
-| Media Storage API | GET List uploaded media, POST Upload media, DELETE Deletes stored media, GET Retrieve stored media, PUT Update stored media, GET Download stored media |
-| Messages | POST Send a message, POST Send a long code message, POST Send a message using number pool, POST Send a short code message, GET Retrieve a message |
-| Messaging Hosted Number | GET List messaging hosted number orders, POST Create a messaging hosted number order, GET Retrieve a messaging hosted number order, POST Upload file required for a messaging hosted number order, DELETE Delete a messaging hosted number |
-| Messaging Profiles | GET List messaging profile metrics, GET List messaging profiles, POST Create a messaging profile, DELETE Delete a messaging profile, GET Retrieve a messaging profile, PATCH Update a messaging profile, GET Retrieve messaging profile metrics, GET List phone numbers associated with a messaging profile, GET List short codes associated with a messaging profile |
-| Messaging URL Domains | GET List messaging URL domains |
-| Mobile Operator Networks | GET List mobile operator networks |
-| Notifications | GET List notification channels, POST Create a notification channel, DELETE Delete a notification channel, GET Retrieve a notification channel, PATCH Update a notification channel, GET List all Notifications Events Conditions, GET List all Notifications Events, GET List all Notifications Profiles, POST Create a notification profile, DELETE Delete a notification profile, GET Retrieve a notification profile, PATCH Update a notification profile, GET List notification settings, POST Add a Notification Setting, DELETE Delete a notification setting, GET Retrieve a notification setting |
-| Number Lookup | GET Lookup phone number data |
-| Number Order Documents | GET List number order documents, POST Create a number order document, GET Retrieve a number order document, PATCH Update a number order document |
-| Number Orders | GET Retrieve all comments, POST Create a comment, GET Retrieve a comment, PATCH Mark a comment as read, GET Retrieve a list of phone numbers associated to orders, GET Retrieve a number order phone number., PATCH Update a number order phone number., GET List number orders, POST Create a number order, GET Retrieve a number order, PATCH Update a number order, GET List sub number orders, GET Retrieve a sub number order, PATCH Update a sub number order |
-| Number Reservations | GET List number reservations, POST Create a number reservation, GET Retrieve a number reservation, POST Extend a number reservation |
-| Number Search | GET List available phone number blocks, GET List available phone numbers |
-| OTA Updates | GET List OTA updates, GET Get OTA update |
-| Programmable Fax Applications | GET List all Fax Applications, POST Creates a Fax Application, DELETE Deletes a Fax Application, GET Retrieve a Fax Application, PATCH Update a Fax Application |
-| Programmable Fax Commands | GET View a list of faxes, POST Send a fax, DELETE Delete a fax, GET View a fax, POST Refresh a fax |
-| SIM Cards | PUT Bulk Network Preferences for SIM cards, POST Register SIM cards, GET Get all SIM cards, POST Validate SIM cards registration codes, DELETE Deletes a SIM card, GET Get SIM card, PATCH Update a SIM card, POST Request a SIM card disable, POST Request a SIM card enable, POST Request setting a SIM card to standby, DELETE DELETE network preferences, GET Get network preferences, PUT Set network preferences, DELETE Delete SIM card public IP, GET Get SIM card public IP definition, POST Set SIM card public IP, GET List wireless connectivity logs |
-| Reports | POST Create a ledger billing group report, GET Retrieve a ledger billing group report |
-| Number Block Orders | GET List number block orders, POST Create a number block order, GET Retrieve a number block order |
-| Inbound Channels | GET Retrieve your inbound channels, PATCH Update inbound channels |
-| Number Background Jobs | GET Lists the phone numbers jobs, POST Delete a batch of numbers, POST Update the emergency settings from a batch of numbers, POST Update a batch of numbers, GET Retrieve a phone numbers job |
-| Number Blocks Background Jobs | GET Lists the phone number blocks jobs, POST Deletes all numbers associated with a phone number block, GET Retrieves a phone number blocks job |
-| Number Configurations | GET List phone numbers, GET List phone numbers with messaging settings, GET List phone numbers with voice settings, DELETE Delete a phone number, GET Retrieve a phone number, PATCH Update a phone number, POST Enable emergency for a phone number, GET Retrieve a phone number with messaging settings, PATCH Update a phone number with messaging settings, GET Retrieve a phone number with voice settings, PATCH Update a phone number with voice settings |
-| Number Portout | GET Retrieve a list of portout requests, GET Retrieve a portout request, GET List all comments for a portout request, POST Create a comment on a portout request, PATCH Update Status |
-| Outbound Voice Profiles | GET Get all outbound voice profiles, POST Create an outbound voice profile, DELETE Delete an outbound voice profile, GET Retrieve an outbound voice profile, PATCH Updates an existing outbound voice profile. |
-| CSV Downloads | GET List CSV downloads, POST Create a CSV download, GET Retrieve a CSV download |
-| Phone Number Porting | POST Run a portability check |
-| Porting Order | GET List all porting orders, POST Create a porting order, GET List all exception types, DELETE Request cancellation, GET Retrieve a porting order, PATCH Edit a porting order, POST Activates every number on a porting order., POST Cancel this porting order, POST Confirms the porting order is ready to be actioned., GET List all porting activation jobs, GET Retrieve a porting activation job, GET List all comments of a porting order, POST Create a comment for a porting order, GET Download a porting order loa template, GET List all porting phone numbers |
-| Private Wireless Gateways | GET Get all Private Wireless Gateways, POST Create a Private Wireless Gateway, DELETE Delete a Private Wireless Gateway, GET Get a Private Wireless Gateway |
-| Queue Commands | GET Retrieve a call queue, GET Retrieve calls from a queue, GET Retrieve a call from a queue |
-| Recordings Commands | GET List recordings, GET Retrieve a recording |
-| MDR Detail Reports | GET Get Cdr Requests, POST Submit Mdr Request, GET GET Reports Mdrs |
-| CDR Usage Reports | GET Get Usage Report Sync |
-| MDR Usage Reports | GET Get Usage Reports, POST Submit Usage Report, GET Get Usage Report Sync 1 |
-| WDR Detail Reports | GET Get Paginated Wdrs |
-| Access Tokens | POST Create an Access Token. |
-| Credentials | GET List all credentials, POST Create a credential, GET List all tags, DELETE Delete a credential, GET Get a credential, PATCH Update a credential, POST Perform activate or deactivate action on provided Credential |
-| Reporting | GET Get all Wireless Detail Records (WDRs) Reports, POST Create a Wireless Detail Records (WDRs) Report, DELETE Delete a Wireless Detail Record (WDR) Report, GET Get a Wireless Detail Record (WDR) Report |
-| Requirement Types | GET List all requirement types, GET Retrieve a requirement types |
-| Requirements | GET List all requirements, GET Retrieve a document requirement |
-| Room Participants | GET View a list of room participants., GET View a room participant. |
-| Room Sessions | GET View a list of room sessions., GET View a room session., GET View a list of room participants. |
-| Rooms | GET View a list of rooms., POST Create a room., DELETE Delete a room., GET View a room., GET View a list of room sessions. |
-| Rooms Client Tokens | POST Create Client Token to join a room., POST Refresh Client Token to join a room. |
-| SIM Card Group Actions | GET List SIM card group actions, GET Get SIM card group action details |
-| SIM Card Groups | GET Get all SIM card groups, POST Create a SIM card group, DELETE Delete a SIM card group, GET Get SIM card group, PATCH Update a SIM card group, POST Request Private Wireless Gateway removal from SIM card group, POST Request Private Wireless Gateway assignment for SIM card group |
-| SIM Card Orders | POST Preview SIM card orders, GET Get all SIM card orders, POST Create a SIM card order, GET Get a single SIM card order |
-| Short Codes | GET List short codes, GET Retrieve a short code, PATCH Update short code |
-| Te XML Applications | GET List all TeXML Applications, POST Creates a TeXML Application, DELETE Deletes a TeXML Application, GET Retrieve a TeXML Application, PATCH Update a TeXML Application |
-| Verify | GET List verifications by phone number, POST Submit a verification code, POST Trigger a Call verification, POST Trigger a Flash call verification, POST Trigger a PSD2 verification, POST Trigger a SMS verification, POST Trigger a Whatsapp verification, GET Retrieve a verification, GET List all Verify profiles, POST Create a Verify profile, DELETE Delete a Verify profile, GET Retrieve a Verify profile, PATCH Update a Verify profile |
-| Webhooks | GET List webhook deliveries, GET Find webhook_delivery details by ID |
-| Whats App Contacts | POST Check Contact |
-| Whats App Detail Reports | GET Get Requests, POST Submit Request |
-| Whats App Media | POST Upload Media, DELETE Delete Media, GET Download Media |
-| Whats App Messages | POST Send Message, PATCH Mark Message As Read |
-| Whats App Usage Aggregations | GET Get Usage Aggregations Sync |
-| Whats App Users | GET Get User, PATCH Update WhatsApp User |
+| Addresses | Get list all addresses, Post creates an address, Post validate an address, Deletes an address, Get retrieve an address |
+| Authentication Providers | Get list all sso authentication providers, Post creates an authentication provider, Deletes an authentication provider, Get retrieve an authentication provider, Patch update a authentication provider |
+| Billing | Get retrieve user balance details |
+| Billing Groups | Get list all billing groups, Post create a billing group, Delete a billing group, Get retrieve a billing group, Patch update a billing group |
+| Bulk Credentials | Delete several credentials, Patch update several credentials, Post creates several credentials, Post perform activate or deactivate action on all credentials filtered by the provided tag |
+| Call Commands | Post dial, Post answer call, Post bridge calls, Post enqueue call, Post forking start, Post forking stop, Post gather stop, Post gather using audio, Post gather using speak, Post hangup call, Post remove call from a queue, Post play audio url, Post stop audio playback, Post record pause, Post record resume, Post recording start, Post recording stop, Post sip refer a call, Post reject a call, Post send dtmf, Post speak text, Post transcription start, Post transcription stop, Post transfer call |
+| Call Control Applications | Get list call control applications, Post create a call control application, Delete a call control application, Get retrieve a call control application, Patch update a call control application |
+| Call Information | Get retrieve a call status |
+| Conference Commands | Get list conferences, Post create conference, Get list conference participants, Get retrieve a conference, Post dial a new participant into a conference, Post hold conference participants, Post join a conference, Post leave a conference, Post mute conference participants, Post play audio to conference participants, Post conference recording start, Post conference recording stop, Post speak text to conference participants, Post stop audio being played on the conference, Post unhold conference participants, Post unmute conference participants, Post update conference participant |
+| Connections | Get list connections, Get retrieve a connection |
+| Credential Connections | Get list credential connections, Post create a credential connection, Delete a credential connection, Get retrieve a credential connection, Patch update a credential connection |
+| Debugging | Get list call events |
+| Detail Records | Get search detail records |
+| Documents | Get list all document links, Get list all documents, Post upload a document, Delete a document, Get retrieve a document, Patch update a document, Get download a document |
+| FQDN Connections | Get list fqdn connections, Post create an fqdn connection, Delete an fqdn connection, Get retrieve an fqdn connection, Patch update an fqdn connection |
+| FQD Ns | Get list fqdns, Post create an fqdn, Delete an fqdn, Get retrieve an fqdn, Patch update an fqdn |
+| IP Connections | Get list ip connections, Post create an ip connection, Delete an ip connection, Get retrieve an ip connection, Patch update an ip connection |
+| I Ps | Get list ips, Post create an ip, Delete an ip, Get retrieve an ip, Patch update an ip |
+| Inventory Level | Get create an inventory coverage request |
+| MDR Search Beta | Get fetch messaging detail records, Get fetch message body by id |
+| Managed Accounts | Get lists accounts managed by the current user, Post create a new managed account, Get retrieve a managed account, Post disables a managed account, Post enables a managed account |
+| Media Storage API | Get list uploaded media, Post upload media, Deletes stored media, Get retrieve stored media, Put update stored media, Get download stored media |
+| Messages | Post send a message, Post send a long code message, Post send a message using number pool, Post send a short code message, Get retrieve a message |
+| Messaging Hosted Number | Get list messaging hosted number orders, Post create a messaging hosted number order, Get retrieve a messaging hosted number order, Post upload file required for a messaging hosted number order, Delete a messaging hosted number |
+| Messaging Profiles | Get list messaging profile metrics, Get list messaging profiles, Post create a messaging profile, Delete a messaging profile, Get retrieve a messaging profile, Patch update a messaging profile, Get retrieve messaging profile metrics, Get list phone numbers associated with a messaging profile, Get list short codes associated with a messaging profile |
+| Messaging URL Domains | Get list messaging url domains |
+| Mobile Operator Networks | Get list mobile operator networks |
+| Notifications | Get list notification channels, Post create a notification channel, Delete a notification channel, Get retrieve a notification channel, Patch update a notification channel, Get list all notifications events conditions, Get list all notifications events, Get list all notifications profiles, Post create a notification profile, Delete a notification profile, Get retrieve a notification profile, Patch update a notification profile, Get list notification settings, Post add a notification setting, Delete a notification setting, Get retrieve a notification setting |
+| Number Lookup | Get lookup phone number data |
+| Number Order Documents | Get list number order documents, Post create a number order document, Get retrieve a number order document, Patch update a number order document |
+| Number Orders | Get retrieve all comments, Post create a comment, Get retrieve a comment, Patch mark a comment as read, Get retrieve a list of phone numbers associated to orders, Get retrieve a number order phone number, Patch update a number order phone number, Get list number orders, Post create a number order, Get retrieve a number order, Patch update a number order, Get list sub number orders, Get retrieve a sub number order, Patch update a sub number order |
+| Number Reservations | Get list number reservations, Post create a number reservation, Get retrieve a number reservation, Post extend a number reservation |
+| Number Search | Get list available phone number blocks, Get list available phone numbers |
+| OTA Updates | Get list ota updates, Get ota update |
+| Programmable Fax Applications | Get list all fax applications, Post creates a fax application, Deletes a fax application, Get retrieve a fax application, Patch update a fax application |
+| Programmable Fax Commands | Get view a list of faxes, Post send a fax, Delete a fax, Get view a fax, Post refresh a fax |
+| SIM Cards | Put bulk network preferences for sim cards, Post register sim cards, Get all sim cards, Post validate sim cards registration codes, Deletes a sim card, Get sim card, Patch update a sim card, Post request a sim card disable, Post request a sim card enable, Post request setting a sim card to standby, Delete network preferences, Get network preferences, Put set network preferences, Delete sim card public ip, Get sim card public ip definition, Post set sim card public ip, Get list wireless connectivity logs |
+| Reports | Post create a ledger billing group report, Get retrieve a ledger billing group report |
+| Number Block Orders | Get list number block orders, Post create a number block order, Get retrieve a number block order |
+| Inbound Channels | Get retrieve your inbound channels, Patch update inbound channels |
+| Number Background Jobs | Get lists the phone numbers jobs, Post delete a batch of numbers, Post update the emergency settings from a batch of numbers, Post update a batch of numbers, Get retrieve a phone numbers job |
+| Number Blocks Background Jobs | Get lists the phone number blocks jobs, Post deletes all numbers associated with a phone number block, Get retrieves a phone number blocks job |
+| Number Configurations | Get list phone numbers, Get list phone numbers with messaging settings, Get list phone numbers with voice settings, Delete a phone number, Get retrieve a phone number, Patch update a phone number, Post enable emergency for a phone number, Get retrieve a phone number with messaging settings, Patch update a phone number with messaging settings, Get retrieve a phone number with voice settings, Patch update a phone number with voice settings |
+| Number Portout | Get retrieve a list of portout requests, Get retrieve a portout request, Get list all comments for a portout request, Post create a comment on a portout request, Patch update status |
+| Outbound Voice Profiles | Get all outbound voice profiles, Post create an outbound voice profile, Delete an outbound voice profile, Get retrieve an outbound voice profile, Patch updates an existing outbound voice profile |
+| CSV Downloads | Get list csv downloads, Post create a csv download, Get retrieve a csv download |
+| Phone Number Porting | Post run a portability check |
+| Porting Order | Get list all porting orders, Post create a porting order, Get list all exception types, Delete request cancellation, Get retrieve a porting order, Patch edit a porting order, Post activates every number on a porting order, Post cancel this porting order, Post confirms the porting order is ready to be actioned, Get list all porting activation jobs, Get retrieve a porting activation job, Get list all comments of a porting order, Post create a comment for a porting order, Get download a porting order loa template, Get list all porting phone numbers |
+| Private Wireless Gateways | Get all private wireless gateways, Post create a private wireless gateway, Delete a private wireless gateway, Get a private wireless gateway |
+| Queue Commands | Get retrieve a call queue, Get retrieve calls from a queue, Get retrieve a call from a queue |
+| Recordings Commands | Get list recordings, Get retrieve a recording |
+| MDR Detail Reports | Get cdr requests, Post submit mdr request, Get reports mdrs |
+| CDR Usage Reports | Get usage report sync |
+| MDR Usage Reports | Get usage reports, Post submit usage report, Get usage report sync 1 |
+| WDR Detail Reports | Get paginated wdrs |
+| Access Tokens | Post create an access token |
+| Credentials | Get list all credentials, Post create a credential, Get list all tags, Delete a credential, Get a credential, Patch update a credential, Post perform activate or deactivate action on provided credential |
+| Reporting | Get all wireless detail records wdrs reports, Post create a wireless detail records wdrs report, Delete a wireless detail record wdr report, Get a wireless detail record wdr report |
+| Requirement Types | Get list all requirement types, Get retrieve a requirement types |
+| Requirements | Get list all requirements, Get retrieve a document requirement |
+| Room Participants | Get view a list of room participants, Get view a room participant |
+| Room Sessions | Get view a list of room sessions, Get view a room session, Get view a list of room participants |
+| Rooms | Get view a list of rooms, Post create a room, Delete a room, Get view a room, Get view a list of room sessions |
+| Rooms Client Tokens | Post create client token to join a room, Post refresh client token to join a room |
+| SIM Card Group Actions | Get list sim card group actions, Get sim card group action details |
+| SIM Card Groups | Get all sim card groups, Post create a sim card group, Delete a sim card group, Get sim card group, Patch update a sim card group, Post request private wireless gateway removal from sim card group, Post request private wireless gateway assignment for sim card group |
+| SIM Card Orders | Post preview sim card orders, Get all sim card orders, Post create a sim card order, Get a single sim card order |
+| Short Codes | Get list short codes, Get retrieve a short code, Patch update short code |
+| Te XML Applications | Get list all texml applications, Post creates a texml application, Deletes a texml application, Get retrieve a texml application, Patch update a texml application |
+| Verify | Get list verifications by phone number, Post submit a verification code, Post trigger a call verification, Post trigger a flash call verification, Post trigger a psd2 verification, Post trigger a sms verification, Post trigger a whatsapp verification, Get retrieve a verification, Get list all verify profiles, Post create a verify profile, Delete a verify profile, Get retrieve a verify profile, Patch update a verify profile |
+| Webhooks | Get list webhook deliveries, Get find webhookdelivery details by id |
+| Whats App Contacts | Post check contact |
+| Whats App Detail Reports | Get requests, Post submit request |
+| Whats App Media | Post upload media, Delete media, Get download media |
+| Whats App Messages | Post send message, Patch mark message as read |
+| Whats App Usage Aggregations | Get usage aggregations sync |
+| Whats App Users | Get user, Patch update whatsapp user |
 
 ---
 
